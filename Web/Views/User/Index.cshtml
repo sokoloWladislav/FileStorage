@@ -1,0 +1,16 @@
+﻿@model List<Web.Models.FileViewModel>
+
+@{
+    ViewBag.Title = "User";
+}
+
+<h2>Your Files, @ViewBag.Name</h2>
+
+<div>
+    @Html.ActionLink("Добавить ", "CreateFile")
+</div>
+
+@foreach (var item in Model)
+{
+    <div> @item.FileName  @item.Id  @item.FileType @item.ApplicationUserId <a href="GetFile/@item.Id"> Load </a>  @item.DownloadsCount   @item.OwnerName  </div>
+}

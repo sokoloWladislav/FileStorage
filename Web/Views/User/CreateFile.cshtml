@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "Create File";
+}
+
+<h3>Выберите файл для загрузки</h3>
+@using (Html.BeginForm("CreateFile", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="file" name="upload" /><br>
+    <input type="submit" value="Загрузить" />
+}
