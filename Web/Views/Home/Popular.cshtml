@@ -1,0 +1,12 @@
+﻿@model System.Collections.Generic.List<Web.Models.FileViewModel>
+
+@{
+    ViewBag.Title = "Popular Files";
+    Layout = ViewBag.Layout;
+}
+
+
+@foreach (var file in Model)
+{
+    <div> @file.FileName</div>
+}

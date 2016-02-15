@@ -276,6 +276,7 @@ table {
   }
   .navbar {
     display: none;
+    background-color: red;
   }
   .table td,
   .table th {
@@ -4517,16 +4518,17 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-inverse .navbar-text {
   color: #999999;
+  
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #999999;
+  color: white;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #ffffff;
-  background-color: transparent;
+  color: black;
+  background-color: white;
 }
 
 .navbar-inverse .navbar-nav > .active > a,
